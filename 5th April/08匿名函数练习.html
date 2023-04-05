@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>获取验证码</button>
+    <script>
+        //在页面中创建一个button按钮，当点击该按钮时，控制台随机生成5位由数字字母构成的字符串验证码
+        var button=document.querySelector("button");
+        button.onclick=function(){
+            var code='';
+            for(var i=1;i<=5;i++){
+                var str='abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                var index=parseInt(Math.random()*str.length);
+                // console.log(index);//拿到字符串下标
+                code+=str[index];
+            }
+            console.log(code);
+        }
+
+    </script>
+</body>
+</html>

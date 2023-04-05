@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //假设有一对兔子，第三个月开始可以生一对小兔子，小兔子第三个月可以生后代，假设兔子都不死，求第十个月的兔子总和
+
+        //定义函数n月的兔子数
+        function rabbit(n){
+            if(n>=1 && n<=2){
+                return 1;
+            }else{
+                return rabbit(n-1)+rabbit(n-2);//斐波那契数列
+            }
+        }
+        var res=rabbit(3);
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">我是一个div</div>
+    <div id="div">haha</div>
+    <input type="checkbox" name="food">apple
+    <input type="checkbox" name="food">banana
+    <input type="checkbox" name="food">king prawn
+    <ul>
+        <li>我是第1个元素</li>
+        <li class="second">我是第2个元素 <a href="#">哈哈</a></li>
+        <li>我是第3个元素</li>
+        <li class="forth">我是第4个元素</li>
+        <li class="forth">我是第5个元素</li>
+    </ul>
+    <script>
+        //通过ID获取元素
+        var div=document.getElementById('div');
+        console.log(div);
+        //通过标签名字获取
+        var divs=document.getElementsByTagName('div');
+        console.log(divs);//得到一个伪数组，可以通过操作下标来获取对应元素
+        console.log(divs[0]);
+
+        //专门对表单元素获取
+        var inputs=document.getElementsByName('food');
+        console.log(inputs);
+        console.log(inputs[2]);
+
+        //通过类选择器获取元素
+        var lis=document.getElementsByClassName('forth');
+        console.log(lis);
+
+        //通过css选择器获取元素
+        var eles=document.querySelector('.second');
+        console.log(eles);
+        var list=document.querySelectorAll('.forth');
+        console.log(list);
+        var res=document.querySelectorAll('.second>a');
+        console.log(res);
+        
+        
+    </script>
+</body>
+</html>
