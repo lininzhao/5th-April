@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="user">
+    <button>提交</button> -->
+    <div id="div1">哈哈 <p>helloworld</p></div>
+    <div id="div2">ok</div>
+    <script>
+        
+        // var btn=document.getElementsByTagName('button');
+        // btn.onclick=function(){
+        //     var input=document.getElementById('user');
+        //     input.value=100;
+        // }
+        // console.log(input.value);
+
+        var div1=document.getElementById('div1');
+        var div2=document.getElementById('div2');
+        div1.innerHTML='hiya';
+        div2.innerText='你好';
+        div1.textContent='hola';
+        console.log(div1,div2);
+
+    </script>
+</body>
+</html>
